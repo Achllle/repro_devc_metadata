@@ -1,0 +1,6 @@
+{
+    "name": "compose_system",
+    "dockerComposeFile": ["../compose.yaml"],
+    "service": "service1",
+    "workspaceFolder": "/root"
+}

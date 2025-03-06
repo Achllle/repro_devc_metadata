@@ -1,0 +1,12 @@
+{
+    "name": "base_container",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "options": [
+            "--tag=base_img"
+        ]
+    },
+    "mounts": [
+        "source=/var/log,target=/var/log,type=bind"
+    ]
+}

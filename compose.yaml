@@ -1,0 +1,24 @@
+services:
+  service1:
+    # build:
+    #   context: .
+    #   dockerfile: img1/Dockerfile
+    image: base_img
+    volumes:
+      - type: bind
+        source: /var/log/apt
+        target: /var/log
+    command: sleep infinity
+
+  # service2:
+  #   depends_on:
+  #     - service1
+  #   build:
+  #     context: .
+  #     dockerfile: img2/Dockerfile
+  #   image: dependent_img
+  #   volumes:
+  #     - type: bind
+  #       source: /var/log/apt
+  #       target: /var/log
+  #   command: sleep infinity

@@ -1,0 +1,12 @@
+{
+    "name": "derived_container",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "options": [
+            "--tag=dependent_img"
+        ]
+    },
+    "mounts": [
+        "source=/var/log,target=/var/log,type=bind"
+    ]
+}
